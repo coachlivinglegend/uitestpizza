@@ -5,10 +5,10 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
-    margin: 50px 100px 0 100px;
+    margin: 0px 100px 0 100px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 450px 500px auto auto auto;
+    grid-template-rows: 1fr 4.5fr 500px auto auto auto;
     grid-row-gap: 1em;
     justify-content: center;
     align-items: center;
@@ -70,13 +70,13 @@ nav a{
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
 }
 .aboutus{
     grid-area: aboutus;
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr;
+    margin-top: 35px;
 }
 .aboutushead{
     display: flex;
@@ -96,7 +96,7 @@ hr{
 }
 .wrapper{
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,8 @@ hr{
     color: #333333;    
 }
 .ourpicture{
-    height: 1fr;
+    height: 460px;
+   
 }
 .ourpicture img{
     max-width: 100%;
@@ -147,6 +148,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     height: 75px;
+    padding-top: 30px;
 }
 
 .menuhead h2{
@@ -398,3 +400,5 @@ i{
 .namebdis a:hover{
     color: red;
 }
+
+@media only screen and (max-width: 700px)
