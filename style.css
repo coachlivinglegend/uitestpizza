@@ -8,7 +8,7 @@ font-family: Arial, Helvetica, sans-serif;
     margin: 50px 100px 0 100px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 500px 600px 1000px 600px 200px;
+    grid-template-rows: 1fr 4.8fr 6fr auto auto auto;
     grid-row-gap: 1em;
     justify-content: center;
     align-items: center;
@@ -65,23 +65,22 @@ nav a{
 
 .main{
     grid-area: main;
-    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
 }
 .aboutus{
     grid-area: aboutus;
-    height: 600px;
     display: grid;
-    grid-template-rows: 100px 500px;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
 }
 .aboutushead{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100px;
 }
 .aboutushead h2{
     font-size: 32px;
@@ -97,18 +96,19 @@ hr{
 .wrapper{
     display: grid;
     grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    /* height: 500px; */
 }
 .story{
-    height: 500px;
+    height: 1fr;
     padding-top: 30px;
    
 }
 .storytext{
     height: 350px;
-    width: 590px;
+    width: 100%;
 }
 .storytext h2{
     font-size: 25px;
@@ -126,7 +126,7 @@ hr{
     color: #333333;    
 }
 .ourpicture{
-    height: 500px;
+    height: 1fr;
 }
 .ourpicture img{
     max-width: 100%;
@@ -134,9 +134,9 @@ hr{
 }
 .menu{
     grid-area: menu;
-    height: 1000px;
+    height: auto;
     display: grid;
-    grid-template-rows: 75px 75px 750px 100px;
+    grid-template-rows: 1fr 1fr auto 1.3fr;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,6 @@ hr{
 }
 
 .gallery{
-    height: 750px;
 }
 
 .menubutton{
@@ -182,7 +181,7 @@ hr{
 
 .contact{
     grid-area: contact;
-    height: 600px;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 500px;
@@ -212,7 +211,7 @@ hr{
 }
 
 .frame1{
-    height: 460px;
+    height: 1fr;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -265,7 +264,7 @@ hr{
 }
 
 .frame2{
-    height: 460px;
+    height: 1fr;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,9 +273,6 @@ hr{
 .frame2 img{
     width: 100%;
     max-height: 100%;
-}
-.pizzatext{
-    height: 500px;
 }
 
 .pizzatext h1{
@@ -318,7 +314,7 @@ input[type=button]:hover{
 
 .pizzapicture{
     position: relative;
-    height: 500px;
+    height: 1fr;
     text-align: center;
     padding-bottom: 25px;
     
@@ -329,14 +325,6 @@ input[type=button]:hover{
     max-height: 100%;
     filter: drop-shadow(0 10px 6px #020202);
 
-}
-
-.fresh{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: #dee1e6;
-    font-size: 115px;
 }
 
 .gallery{
@@ -358,7 +346,7 @@ input[type=button]:hover{
 
 footer{
     grid-area: footer;
-    height: 200px;
+    height: 1fr;
     background-color: black;
     display: grid;
     grid-template-columns: 1fr;
